@@ -33,7 +33,7 @@ public class MedicosController {
     @GetMapping
     public Page<DadosListagemMedico> listar(@PageableDefault(size = 10, sort = {"nome"}) Pageable paginacao) {
         //find all tem uma sobrecarga recebendo pageable como parametro
-        return repository.findAll(paginacao).map(DadosListagemMedico::new);
+        return repository.findAllByAtivoTrue(paginacao).map(DadosListagemMedico::new);
     }
 
     @PutMapping
@@ -48,6 +48,8 @@ public class MedicosController {
     @Transactional
     //@Pathvariable faz o spring reconhecer que o parametro eh o mesmo que vem pela url
     public void deletar(@PathVariable Long id){
-        repository.deleteById(id);
+        //repository.deleteById(id);
+        var medico = repository.getReferenceById(id);
+        medico.excluir();
     }
 }
