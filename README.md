@@ -12,4 +12,9 @@ Projeto desenvolvido em Java utilizando SpringBoot3 para construção de uma API
 <li>Controlar a paginação e a ordenação dos dados devolvidos pela API com os parâmetros page, size e sort;</li>
 <li>Configurar o projeto para que os comandos SQL sejam exibidos no console.</li>
 <li>Implementar o conceito de exclusão lógica com o uso de um atributo booleano.</li>
+<li>Criar uma classe para isolar o tratamento de exceptions da API, com a utilização da anotação @RestControllerAdvice;</li>
+<li>Utilizar a anotação @ExceptionHandler, do Spring, para indicar qual exception um determinado método da classe de tratamento de erros deve capturar;</li>
+<li>Tratar erros do tipo 404 (Not Found) na classe de tratamento de erros;</li>
+<li>Tratar erros do tipo 400 (Bad Request), para erros de validação do Bean Validation, na classe de tratamento de erros;</li>
+<li>Simplificar o JSON devolvido pela API em casos de erro de validação do Bean Validation.</li>
 </ul>
