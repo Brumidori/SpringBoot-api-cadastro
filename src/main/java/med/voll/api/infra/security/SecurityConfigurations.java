@@ -34,6 +34,7 @@ public class SecurityConfigurations {
                 .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .cors(withDefaults())
                 .csrf(csrf -> csrf.disable())
+                //estabele a ordem dos filtros - 1 do projeto, 2 do spring
                 .addFilterBefore(securityFilter, UsernamePasswordAuthenticationFilter.class)
                 .build();
 
