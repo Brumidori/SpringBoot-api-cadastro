@@ -22,4 +22,8 @@ Projeto desenvolvido em Java utilizando SpringBoot3 para construção de uma API
 <li>Injetar uma propriedade do arquivo application.properties em uma classe gerenciada pelo Spring, utilizando a anotação @Value;</li>
 <li>Simplificar o JSON devolvido pela API em casos de erro de validação do Bean Validation;</li>
 <li>Devolver um token gerado na API quando um usuário se autenticar nela;</li>
+<li>Implementar um filter criando uma classe que herda da classe OncePerRequestFilter, do Spring;</li>
+<li>Utilizar a biblioteca Auth0 java-jwt para realizar a validação dos tokens recebidos na API;</li>
+<li>Realizar o processo de autenticação da requisição, utilizando a classe SecurityContextHolder, do Spring;</li>
+<li>Liberar e restringir requisições, de acordo com a URL e o verbo do protocolo HTTP.</li>
 </ul>
