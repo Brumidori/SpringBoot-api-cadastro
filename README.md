@@ -3,6 +3,41 @@ Projeto desenvolvido em Java utilizando SpringBoot3 para construção de uma API
 <br>É possível cadastrar médicos e pacientes, bem como agendar consultas.
 O projeto possui conexão com banco de dados MySQL, security, testes e documentação.
 
+## ⚙️ Funcionalidades
+
+- [x] CRUD de médicos;
+- [x] CRUD de pacientes;
+- [x] Agendamento de consultas;
+- [x] Cancelamento de consultas.
+
+---
+
+## 🎨 Layout
+
+O layout da aplicação mobile está disponível neste link: <a href="https://www.figma.com/file/N4CgpJqsg7gjbKuDmra3EV/Voll.med">Figma</a>
+
+---
+
+## 📄 Documentação
+
+A documentação das funcionalidades da aplicação pode ser acessada neste link: <a href="https://trello.com/b/O0lGCsKb/api-voll-med">Trello</a>
+
+---
+
+## 🛠 Tecnologias
+
+As seguintes tecnologias foram utilizadas no desenvolvimento da API Rest do projeto:
+
+- **[Java 17](https://www.oracle.com/java)**
+- **[Spring Boot 3](https://spring.io/projects/spring-boot)**
+- **[Maven](https://maven.apache.org)**
+- **[MySQL](https://www.mysql.com)**
+- **[Hibernate](https://hibernate.org)**
+- **[Flyway](https://flywaydb.org)**
+- **[Lombok](https://projectlombok.org)**
+
+---
+
 ### Regras de negócio:
 
 1. O sistema deve possuir uma funcionalidade que permita o agendamento de consultas, na qual as seguintes informações deverão ser preenchidas:
@@ -54,5 +89,6 @@ Uma consulta somente poderá ser cancelada com antecedência mínima de 24 horas
 <li>Implementar um filter criando uma classe que herda da classe OncePerRequestFilter, do Spring;</li>
 <li>Utilizar a biblioteca Auth0 java-jwt para realizar a validação dos tokens recebidos na API;</li>
 <li>Realizar o processo de autenticação da requisição, utilizando a classe SecurityContextHolder, do Spring;</li>
-<li>Liberar e restringir requisições, de acordo com a URL e o verbo do protocolo HTTP.</li>
+<li>Liberar e restringir requisições, de acordo com a URL e o verbo do protocolo HTTP;</li>
+<li>Implementar uma consulta JPQL (Java Persistence Query Language) complexa em uma interface repository, utilizando para isso a anotação @Query.</li>
 </ul>

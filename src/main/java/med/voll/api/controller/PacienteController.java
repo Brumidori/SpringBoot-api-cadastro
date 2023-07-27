@@ -44,10 +44,10 @@ public class PacienteController {
     }
 
     @DeleteMapping("/{id}")
-    @Transactional
+    @org.springframework.transaction.annotation.Transactional
     public ResponseEntity excluir(@PathVariable Long id) {
         var paciente = repository.getReferenceById(id);
-        repository.delete(paciente);
+        paciente.inativar();
 
         return ResponseEntity.noContent().build();
     }
