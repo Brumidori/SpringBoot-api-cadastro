@@ -1,5 +1,9 @@
 # SpringBoot-api-crud-cadastro
-Projeto desenvolvido em Java utilizando SpringBoot3 para construção de uma API de cadastro com CRUD completo e conexão com MySQL
+Projeto desenvolvido em Java utilizando SpringBoot3 para construção de uma API de cadastro para uma clínica médica.
+É possível cadastrar médicos e pacientes, bem como agnedar consultas.
+O projeto possui conexão com banco de dados MySQL, testes e documentação.
+
+Neste projeto aprendi/desenvolvi a:
 <ul>
 <li>Enviar dados para API no formato JSON;</li>
 <li>Utilizar a anotação @RequestBody para receber os dados do corpo da requisição em um parâmetro no Controller;</li>
