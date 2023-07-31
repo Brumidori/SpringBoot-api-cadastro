@@ -29,6 +29,8 @@ public class SecurityConfigurations {
         return http
                 .authorizeHttpRequests((authz) -> authz
                     .requestMatchers(HttpMethod.POST, "/login").permitAll()
+                        //liberar endopoints swagger
+                        .requestMatchers("/v3/api-docs/**", "/swagger-ui.html","swagger-ui/**").permitAll()
                         .anyRequest().authenticated())
                 .httpBasic(withDefaults())
                 .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
