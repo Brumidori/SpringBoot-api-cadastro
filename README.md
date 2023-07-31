@@ -91,5 +91,8 @@ Uma consulta somente poderá ser cancelada com antecedência mínima de 24 horas
 <li>Utilizar a biblioteca Auth0 java-jwt para realizar a validação dos tokens recebidos na API;</li>
 <li>Realizar o processo de autenticação da requisição, utilizando a classe SecurityContextHolder, do Spring;</li>
 <li>Liberar e restringir requisições, de acordo com a URL e o verbo do protocolo HTTP;</li>
-<li>Implementar uma consulta JPQL (Java Persistence Query Language) complexa em uma interface repository, utilizando para isso a anotação @Query.</li>
+<li>Implementar uma consulta JPQL (Java Persistence Query Language) complexa em uma interface repository, utilizando para isso a anotação @Query;</li>
+<li>Adicionar a biblioteca SpringDoc no projeto para que ela faça a geração automatizada da documentação da API;</li>
+<li>Utilizar o Swagger UI para visualizar e testar uma API Rest;</li>
+<li>Configurar o JWT na documentação gerada pelo SpringDoc.</li>
 </ul>
