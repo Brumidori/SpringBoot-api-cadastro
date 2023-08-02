@@ -95,4 +95,7 @@ Uma consulta somente poderá ser cancelada com antecedência mínima de 24 horas
 <li>Adicionar a biblioteca SpringDoc no projeto para que ela faça a geração automatizada da documentação da API;</li>
 <li>Utilizar o Swagger UI para visualizar e testar uma API Rest;</li>
 <li>Configurar o JWT na documentação gerada pelo SpringDoc.</li>
+<li>Escrever testes automatizados de uma interface Repository, seguindo a estratégia de usar o mesmo banco de dados que a aplicação utiliza.</li>
+<li>Sobrescrever propriedades do arquivo application.properties, criando outro arquivo chamado application-test.properties que seja carregado apenas ao executar os testes, utilizando para isso a anotação @ActiveProfiles;</li>
+<li>Escrever testes automatizados de uma classe Controller, utilizando a classe MockMvc para simular requisições na API.</li>
 </ul>
